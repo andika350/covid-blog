@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const Home = () => {
 
-    const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs');
+    const { data: blogs, isPending, error } = useFetch('https://covid19-blogs.herokuapp.com/api');
 
     // const handleDelete = (id) => {
     //     const newBlogs = blogs.filter(blog => blog.id !== id)

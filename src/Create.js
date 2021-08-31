@@ -16,7 +16,7 @@ const Create = () => {
         setIsPending(true);
 
         setTimeout(() => {
-            fetch('http://localhost:8000/blogs', {
+            fetch('https://covid19-blogs.herokuapp.com/api', {
                 method: 'POST',
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(blog)
